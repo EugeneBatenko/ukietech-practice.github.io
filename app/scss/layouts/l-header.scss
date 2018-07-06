@@ -16,7 +16,7 @@ header {
       display: flex;
       justify-content: space-between;
       li {
-        a {
+        a:not(.icon){
           padding-bottom: 10px;
           font-size: 14px;
           border-bottom: 3px solid $full-transparent-color;
@@ -25,12 +25,6 @@ header {
           }
         }
       }
-    }
-    .shopping-cart {
-      padding-left: 50px;
-    }
-    .search {
-      padding-left: 40px;
     }
   }
 }

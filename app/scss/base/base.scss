@@ -8,15 +8,17 @@ body {
 }
 header {
   max-width: 62.7%;
-  height: 40px;
+  height: 30px;
   margin: 0 auto;
   padding-top: 30px;
   nav {
+    padding-left: 30px;
     ul {
-      width: 490px;
+      //width: 620px;
       margin: 0;
       padding: 0;
       li {
+        padding-left: 40px;
         list-style: none;
       }
     }

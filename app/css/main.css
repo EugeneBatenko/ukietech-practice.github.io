@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 body {
   margin: 0;
   padding: 0;
@@ -10,15 +14,17 @@ body {
 
 header {
   max-width: 62.7%;
-  height: 40px;
+  height: 30px;
   margin: 0 auto;
   padding-top: 30px; }
-  header nav ul {
-    width: 490px;
-    margin: 0;
-    padding: 0; }
-    header nav ul li {
-      list-style: none; }
+  header nav {
+    padding-left: 30px; }
+    header nav ul {
+      margin: 0;
+      padding: 0; }
+      header nav ul li {
+        padding-left: 40px;
+        list-style: none; }
 
 a {
   text-decoration: none;
@@ -44,15 +50,17 @@ body {
 
 header {
   max-width: 62.7%;
-  height: 40px;
+  height: 30px;
   margin: 0 auto;
   padding-top: 30px; }
-  header nav ul {
-    width: 490px;
-    margin: 0;
-    padding: 0; }
-    header nav ul li {
-      list-style: none; }
+  header nav {
+    padding-left: 30px; }
+    header nav ul {
+      margin: 0;
+      padding: 0; }
+      header nav ul li {
+        padding-left: 40px;
+        list-style: none; }
 
 a {
   text-decoration: none;
@@ -84,16 +92,12 @@ header {
     header nav ul {
       display: flex;
       justify-content: space-between; }
-      header nav ul li a {
+      header nav ul li a:not(.icon) {
         padding-bottom: 10px;
         font-size: 14px;
         border-bottom: 3px solid rgba(0, 0, 0, 0); }
-        header nav ul li a:hover {
+        header nav ul li a:not(.icon):hover {
           border-bottom: 3px solid #fce38a; }
-    header nav .shopping-cart {
-      padding-left: 50px; }
-    header nav .search {
-      padding-left: 40px; }
 
 body {
   margin: 0;
@@ -103,15 +107,17 @@ body {
 
 header {
   max-width: 62.7%;
-  height: 40px;
+  height: 30px;
   margin: 0 auto;
   padding-top: 30px; }
-  header nav ul {
-    width: 490px;
-    margin: 0;
-    padding: 0; }
-    header nav ul li {
-      list-style: none; }
+  header nav {
+    padding-left: 30px; }
+    header nav ul {
+      margin: 0;
+      padding: 0; }
+      header nav ul li {
+        padding-left: 40px;
+        list-style: none; }
 
 a {
   text-decoration: none;
