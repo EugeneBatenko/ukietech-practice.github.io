@@ -18,5 +18,8 @@
     "gulp-sass": "^4.0.1",
     "gulp-stylelint": "^7.0.0",
     "stylelint": "^9.3.0"
+  },
+  "dependencies": {
+    "stylelint-scss": "^3.1.3"
   }
 }

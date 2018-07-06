@@ -1,0 +1,9 @@
+@import "../variables";
+@import "../base/base";
+
+.header-banner {
+  height: 100vh;
+  background-image: linear-gradient(to top,
+          rgba(252, 227, 138, 0.9) 0%,
+          rgba(243, 129, 129, 0.9) 100%);
+  }

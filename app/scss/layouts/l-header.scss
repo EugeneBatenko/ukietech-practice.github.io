@@ -1,0 +1,36 @@
+@import "../base/base";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        a {
+          padding-bottom: 10px;
+          font-size: 14px;
+          border-bottom: 3px solid $full-transparent-color;
+          &:hover {
+            border-bottom: 3px solid $hover-link-color;
+          }
+        }
+      }
+    }
+    .shopping-cart {
+      padding-left: 50px;
+    }
+    .search {
+      padding-left: 40px;
+    }
+  }
+}
