@@ -6,17 +6,17 @@ header {
   align-items: center;
   .logo {
     display: flex;
-    align-items: center;
+    //align-items: center;
   }
   nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    //align-items: center;
     ul {
       display: flex;
       justify-content: space-between;
       li {
-        a:not(.icon){
+        a:not(.icon) {
           padding-bottom: 10px;
           font-size: 14px;
           border-bottom: 3px solid $full-transparent-color;
@@ -28,3 +28,5 @@ header {
     }
   }
 }
+
+

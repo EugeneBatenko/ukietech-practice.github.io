@@ -15,8 +15,12 @@
   "devDependencies": {
     "browser-sync": "^2.24.5",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-postcss": "^7.0.1",
     "gulp-sass": "^4.0.1",
     "gulp-stylelint": "^7.0.0",
+    "postcss-reporter": "^5.0.0",
+    "postcss-scss": "^1.0.6",
     "stylelint": "^9.3.0"
   },
   "dependencies": {
