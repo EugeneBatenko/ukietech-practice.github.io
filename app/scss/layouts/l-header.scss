@@ -44,6 +44,7 @@ header {
             color: transparent;
             cursor: pointer;
             border-radius: 20px;
+            transition: all 1s ease;
             &:focus {
               width: 200px;
               color: $hover-link-color;

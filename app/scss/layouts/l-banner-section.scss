@@ -23,7 +23,7 @@
       text-align: center;
       @media screen and(max-width: 1024px) {
         font-size: 17vmax;
-        line-height: 10px;
+        line-height: 20vmax;
       }
     }
     &::after {
@@ -45,6 +45,45 @@
       color: $pink-color;
       border: 3px solid $pink-color;
       transition: all 0.5s;
+    }
+  }
+  .buttons {
+    width: 62.5%;
+    margin: 155px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .block {
+      width: 20%;
+      height: 45px;
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      color: $white-font-color;
+      font-family: $headers-font;
+      transition: all 1s;
+      cursor: pointer;
+      border-top: 5px solid $white-font-color;
+      p {
+        font-size: 18px;
+        span {
+          font-weight: bold;
+          font-size: 24px;
+          height: 25px;
+        }
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: 0;
+        right: 100%;
+        border-top: 5px solid $pink-color;
+        transition: all 1s;
+      }
+      &:hover:before {
+        right: 0;
+      }
     }
   }
 }
