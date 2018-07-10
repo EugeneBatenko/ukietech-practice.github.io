@@ -13,13 +13,11 @@ header {
   margin: 0 auto;
   padding-top: 30px;
   nav {
-    padding-left: 30px;
     ul {
       //width: 620px;
       margin: 0;
       padding: 0;
       li {
-        padding-left: 40px;
         list-style: none;
         #search {
           //display: flex;
@@ -31,42 +29,11 @@ header {
             }
           }
           input {
-            height: 25px;
             border: none;
             outline: none;
-            background-color: $full-transparent-color;
             margin: 0;
             padding: 0;
-            &::placeholder {
-              color: $hover-link-color;
-            }
           }
-          input[type=search] {
-            width: 30px;
-            height: 20px;
-            padding-left: 30px;
-            background: url('../img/magnifying-glass.svg') no-repeat 5px center;
-            color: transparent;
-            cursor: pointer;
-            border-radius: 20px;
-            &:focus {
-              width: 200px;
-              color: $hover-link-color;
-              background-color: rgba(255,255,255, 0.3);
-              transition: all 1s ease;
-              cursor: auto;
-            }
-          }
-
-          /*
-          input[type=search],input[type=submit] {
-            transition: 0.3s;
-            border: 1px solid $full-transparent-color;
-            &:focus {
-              border: 1px solid #fce38a;
-            }
-          }
-          */
         }
       }
     }
