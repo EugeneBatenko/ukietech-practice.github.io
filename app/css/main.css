@@ -50,6 +50,24 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 30px; }
 
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif; }
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Kaushan Script", cursive; }
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  outline: none;
+  border: 3px solid #fff;
+  background-color: rgba(0, 0, 0, 0); }
+
 body {
   margin: 0;
   padding: 0;
@@ -93,6 +111,24 @@ h1 {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 30px; }
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif; }
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Kaushan Script", cursive; }
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  outline: none;
+  border: 3px solid #fff;
+  background-color: rgba(0, 0, 0, 0); }
 
 header {
   display: -webkit-box;
@@ -196,14 +232,14 @@ header {
       width: 70%;
       height: 100%;
       background-color: #f38181;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s; }
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
       header .mobile-nav .mobile-ul li {
         margin: 30px 40px; }
     header .mobile-nav .mobile-ul-active {
       right: 0;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s; }
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
 
 body {
   margin: 0;
@@ -249,7 +285,61 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 30px; }
 
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif; }
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Kaushan Script", cursive; }
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  outline: none;
+  border: 3px solid #fff;
+  background-color: rgba(0, 0, 0, 0); }
+
 .header-banner {
-  height: 100vh;
+  height: 100%;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
   background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%); }
+  .header-banner__text h3 {
+    font-size: 72px;
+    color: #fff;
+    text-align: center;
+    margin-top: 160px; }
+    @media screen and (max-width: 1024px) {
+      .header-banner__text h3 {
+        font-size: 7vmax; } }
+  .header-banner__text h2 {
+    font-size: 150px;
+    line-height: 140px;
+    color: #fff;
+    text-align: center; }
+    @media screen and (max-width: 1024px) {
+      .header-banner__text h2 {
+        font-size: 17vmax;
+        line-height: 10px; } }
+  .header-banner__text::after {
+    display: inherit;
+    content: "";
+    width: 65px;
+    height: 5px;
+    background-color: #fff;
+    margin: 70px auto 0 auto; }
+  .header-banner button {
+    display: block;
+    margin: 50px auto 0 auto;
+    width: 160px;
+    height: 40px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    .header-banner button:hover {
+      color: #f38181;
+      border: 3px solid #f38181;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }

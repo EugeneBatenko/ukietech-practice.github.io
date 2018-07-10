@@ -50,11 +50,28 @@ a {
     transition: all 0.6s;
   }
 }
-
 h1 {
   margin: 0;
   padding: 0;
   color: $white-font-color;
   font-family: $headers-font;
   font-size: 30px;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: $headers-font;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: $header-font-cursive;
+}
+button {
+  font-family: $headers-font;
+  font-size: 14px;
+  color: $white-font-color;
+  outline: none;
+  border: 3px solid $white-font-color;
+  background-color: $full-transparent-color;
 }
