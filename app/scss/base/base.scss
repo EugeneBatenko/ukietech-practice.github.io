@@ -1,4 +1,4 @@
-@import "../variables";
+@import "../utilities/variables";
 
 body {
   margin: 0;
@@ -28,16 +28,16 @@ header {
               color: $hover-link-color;
             }
           }
-          input {
-            border: none;
-            outline: none;
-            margin: 0;
-            padding: 0;
-          }
         }
       }
     }
   }
+}
+input {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {

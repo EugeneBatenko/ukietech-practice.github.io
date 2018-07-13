@@ -26,11 +26,12 @@ header {
         color: #fff; }
         header nav ul li #search span:hover {
           color: #fce38a; }
-      header nav ul li #search input {
-        border: none;
-        outline: none;
-        margin: 0;
-        padding: 0; }
+
+input {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0; }
 
 a {
   text-decoration: none;
@@ -91,11 +92,12 @@ header {
         color: #fff; }
         header nav ul li #search span:hover {
           color: #fce38a; }
-      header nav ul li #search input {
-        border: none;
-        outline: none;
-        margin: 0;
-        padding: 0; }
+
+input {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0; }
 
 a {
   text-decoration: none;
@@ -189,7 +191,7 @@ header {
           width: 30px;
           height: 20px;
           padding-left: 30px;
-          background: url("../img/magnifying-glass.svg") no-repeat 5px center;
+          background: url("../../img/magnifying-glass.svg") no-repeat 5px center;
           color: transparent;
           cursor: pointer;
           border-radius: 20px;
@@ -213,6 +215,7 @@ header {
         display: block; } }
     header .mobile-nav .hamburger {
       position: fixed;
+      top: 28px;
       width: 30px;
       height: 30px;
       z-index: 1000; }
@@ -234,16 +237,76 @@ header {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px); }
     header .mobile-nav .mobile-ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
       position: fixed;
       top: 0;
-      right: -70%;
-      width: 70%;
+      right: -75%;
+      width: 75%;
       height: 100%;
       background-color: #f38181;
       -webkit-transition: all 0.3s;
       transition: all 0.3s; }
       header .mobile-nav .mobile-ul li {
+        text-align: center;
         margin: 30px 40px; }
+        header .mobile-nav .mobile-ul li a {
+          font-size: 4vmax; }
+      header .mobile-nav .mobile-ul .shop-n-search {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center; }
+        header .mobile-nav .mobile-ul .shop-n-search a {
+          padding-right: 30px;
+          font-size: 22px; }
+        header .mobile-nav .mobile-ul .shop-n-search #mob-search {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: end;
+          -ms-flex-align: end;
+          align-items: flex-end; }
+          header .mobile-nav .mobile-ul .shop-n-search #mob-search input {
+            width: 30px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0);
+            padding-left: 4vmax; }
+            header .mobile-nav .mobile-ul .shop-n-search #mob-search input::-webkit-input-placeholder {
+              color: #fce38a; }
+            header .mobile-nav .mobile-ul .shop-n-search #mob-search input:-ms-input-placeholder {
+              color: #fce38a; }
+            header .mobile-nav .mobile-ul .shop-n-search #mob-search input::-ms-input-placeholder {
+              color: #fce38a; }
+            header .mobile-nav .mobile-ul .shop-n-search #mob-search input::placeholder {
+              color: #fce38a; }
+          header .mobile-nav .mobile-ul .shop-n-search #mob-search input[type=search] {
+            width: 4vmax;
+            height: 4vmax;
+            background: url("../../img/magnifying-glass.svg") no-repeat 5px center;
+            font-size: 12px;
+            color: transparent;
+            cursor: pointer;
+            border-radius: 10px;
+            -webkit-transition: all 1s ease;
+            transition: all 1s ease; }
+            header .mobile-nav .mobile-ul .shop-n-search #mob-search input[type=search]:focus {
+              width: 30vmax;
+              padding-left: 4vmax;
+              color: #fce38a;
+              background-color: rgba(255, 255, 255, 0.3);
+              -webkit-transition: all 1s ease;
+              transition: all 1s ease;
+              cursor: auto; }
     header .mobile-nav .mobile-ul-active {
       right: 0;
       -webkit-transition: all 0.3s;
@@ -269,11 +332,12 @@ header {
         color: #fff; }
         header nav ul li #search span:hover {
           color: #fce38a; }
-      header nav ul li #search input {
-        border: none;
-        outline: none;
-        margin: 0;
-        padding: 0; }
+
+input {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0; }
 
 a {
   text-decoration: none;
@@ -314,47 +378,51 @@ button {
 p {
   margin: 0; }
 
-.header-banner {
+.l-header-banner {
   height: 100%;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
   background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%); }
-  .header-banner__text h3 {
+  .l-header-banner__text h3 {
     font-size: 72px;
     color: #fff;
     text-align: center;
     margin-top: 160px; }
     @media screen and (max-width: 1024px) {
-      .header-banner__text h3 {
-        font-size: 7vmax; } }
-  .header-banner__text h2 {
+      .l-header-banner__text h3 {
+        font-size: 6vmax; } }
+  .l-header-banner__text h2 {
     font-size: 150px;
     line-height: 140px;
     color: #fff;
     text-align: center; }
     @media screen and (max-width: 1024px) {
-      .header-banner__text h2 {
-        font-size: 17vmax;
+      .l-header-banner__text h2 {
+        font-size: 15vmax;
         line-height: 20vmax; } }
-  .header-banner__text::after {
+    @media screen and (max-width: 768px) {
+      .l-header-banner__text h2 {
+        font-size: 10vmax;
+        line-height: 14vmax; } }
+  .l-header-banner__text::after {
     display: inherit;
     content: "";
     width: 65px;
     height: 5px;
     background-color: #fff;
     margin: 70px auto 0 auto; }
-  .header-banner button {
+  .l-header-banner button {
     display: block;
     margin: 50px auto 0 auto;
     width: 160px;
     height: 40px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s; }
-    .header-banner button:hover {
+    .l-header-banner button:hover {
       color: #f38181;
       border: 3px solid #f38181;
       -webkit-transition: all 0.5s;
       transition: all 0.5s; }
-  .header-banner .buttons {
+  .l-header-banner .slider {
     width: 62.5%;
     margin: 155px auto 0 auto;
     display: -webkit-box;
@@ -364,7 +432,7 @@ p {
     justify-content: space-around;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    .header-banner .buttons .block {
+    .l-header-banner .slider .block {
       width: 20%;
       height: 45px;
       display: -webkit-box;
@@ -380,13 +448,13 @@ p {
       transition: all 1s;
       cursor: pointer;
       border-top: 5px solid #fff; }
-      .header-banner .buttons .block p {
+      .l-header-banner .slider .block p {
         font-size: 18px; }
-        .header-banner .buttons .block p span {
+        .l-header-banner .slider .block p span {
           font-weight: bold;
           font-size: 24px;
           height: 25px; }
-      .header-banner .buttons .block::before {
+      .l-header-banner .slider .block::before {
         content: '';
         position: absolute;
         top: -5px;
@@ -395,5 +463,5 @@ p {
         border-top: 5px solid #f38181;
         -webkit-transition: all 1s;
         transition: all 1s; }
-      .header-banner .buttons .block:hover:before {
+      .l-header-banner .slider .block:hover:before {
         right: 0; }
