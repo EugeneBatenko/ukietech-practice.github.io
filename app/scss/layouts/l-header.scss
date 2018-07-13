@@ -106,20 +106,20 @@ header {
       height: 100%;
       background-color: $pink-color;
       transition: all 0.3s;
+      z-index: 100;
       li {
         text-align: center;
-        margin: 30px 40px;
+        margin: 20px 30px;
         a {
           font-size: 4vmax;
         }
       }
       .shop-n-search {
         display: flex;
-        justify-content: center;
-        align-content: center;
+        flex-direction: column;
         a {
-          padding-right: 30px;
-          font-size: 22px;
+          font-size: 4vmax;
+          margin: 20px auto;
         }
         #mob-search {
           display: flex;
@@ -134,20 +134,21 @@ header {
             }
           }
           input[type=search] {
-            width: 4vmax;
+            width: 35vmax;
             height: 4vmax;
-            background: url('../../img/magnifying-glass.svg') no-repeat 5px center;
+            margin: 20px 30px;
+            background:
+                    url('../../img/magnifying-glass.svg')
+                    no-repeat 5px center
+                    rgba(255, 255, 255, 0.1);
             //background-size: contain;
             font-size: 12px;
-            color: transparent;
+            color: $hover-link-color;
             cursor: pointer;
             border-radius: 10px;
             transition: all 1s ease;
             &:focus {
-              width: 30vmax;
-              padding-left: 4vmax;
-              color: $hover-link-color;
-              background-color: rgba(255, 255, 255, 0.3);
+              background-color: rgba(255, 255, 255, 0.35);
               transition: all 1s ease;
               cursor: auto;
 

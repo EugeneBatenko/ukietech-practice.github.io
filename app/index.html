@@ -5,6 +5,8 @@
     <title>MoGo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
 <div class="container-wrapper">
@@ -46,7 +48,7 @@
                     <li><a href="#">BLOG</a></li>
                     <li><a href="#">CONTACT</a></li>
                     <div class="shop-n-search">
-                        <a href="#" class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                        <a href="#" class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i> SHOP CART</a>
                         <form id="mob-search">
                             <input  placeholder="Enter your search term..."
                                     type="search"
@@ -57,30 +59,54 @@
 
             </nav>
         </header>
-        <div class="l-header-banner__text">
-            <h3>Creative Template</h3>
-            <h2>Welcome<br>to MoGo</h2>
-        </div>
-        <button type="button">LEARN MORE</button>
-        <div class="slider">
-            <div class="block">
-                <p><span>01</span> INTRO</p>
+        <div class="l-header-banner__slider">
+            <!-- ONES SLIDES -->
+            <div class="slider-main">
+                <div class="slider-main__slide">
+                    <h3>Creative Template</h3>
+                    <h2>Welcome<br>to MoGo</h2>
+                    <button type="button">LEARN MORE</button>
+                </div>
+                <div class="slider-main__slide">
+                    <h3>Creative Template</h3>
+                    <h2>Welcome<br>to MoGo</h2>
+                    <button type="button">LEARN MORE</button>
+                </div>
+                <div class="slider-main__slide">
+                    <h3>Creative Template</h3>
+                    <h2>Welcome<br>to MoGo</h2>
+                    <button type="button">LEARN MORE</button>
+                </div>
+                <div class="slider-main__slide">
+                    <h3>Creative Template</h3>
+                    <h2>Welcome<br>to MoGo</h2>
+                    <button type="button">LEARN MORE</button>
+                </div>
             </div>
-            <div class="block">
-                <p><span>02</span> WORK</p>
+            <!-- </> -->
+            <!-- NAVIGATION SLIDES -->
+            <div class="nav-slider">
+                <div class="nav-slider__button">
+                    <p><span>01</span> INTRO</p>
+                </div>
+                <div class="nav-slider__button">
+                    <p><span>02</span> WORK</p>
+                </div>
+                <div class="nav-slider__button">
+                    <p><span>03</span> ABOUT</p>
+                </div>
+                <div class="nav-slider__button">
+                    <p><span>04</span> CONTACT</p>
+                </div>
             </div>
-            <div class="block">
-                <p><span>03</span> ABOUT</p>
-            </div>
-            <div class="block">
-                <p><span>04</span> CONTACT</p>
-            </div>
+            <!-- </> -->
         </div>
     </section>
 </div>
 <script src="https://use.fontawesome.com/ef2fa877d8.js"></script>
-<script src="../app/js/main.js"></script>
-<!--<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
-<!--<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>

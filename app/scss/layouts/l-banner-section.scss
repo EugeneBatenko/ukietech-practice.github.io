@@ -6,37 +6,41 @@
   background-image: linear-gradient(to top,
           rgba(252, 227, 138, 0.9) 0%,
           rgba(243, 129, 129, 0.9) 100%);
-  &__text {
-    h3 {
-      font-size: 72px;
-      color: $white-font-color;
-      text-align: center;
-      margin-top: 160px;
-      @media screen and(max-width: 1024px) {
-        font-size: 6vmax;
+  &__slider {
+    .slider-main {
+      .slider-main__slide {
+        h3 {
+          font-size: 72px;
+          color: $white-font-color;
+          text-align: center;
+          margin-top: 160px;
+          @media screen and(max-width: 1024px) {
+            font-size: 6vmax;
+          }
+        }
+        h2 {
+          font-size: 150px;
+          line-height: 140px;
+          color: $white-font-color;
+          text-align: center;
+          @media screen and(max-width: 1024px) {
+            font-size: 15vmax;
+            line-height: 20vmax;
+          }
+          @media screen and(max-width: 768px) {
+            font-size: 10vmax;
+            line-height: 14vmax;
+          }
+        }
       }
-    }
-    h2 {
-      font-size: 150px;
-      line-height: 140px;
-      color: $white-font-color;
-      text-align: center;
-      @media screen and(max-width: 1024px) {
-        font-size: 15vmax;
-        line-height: 20vmax;
+      &::after {
+        display: block;
+        content: "";
+        width: 65px;
+        height: 5px;
+        background-color: $white-font-color;
+        margin: 70px auto 0 auto;
       }
-      @media screen and(max-width: 768px) {
-        font-size: 10vmax;
-        line-height: 14vmax;
-      }
-    }
-    &::after {
-      display: inherit;
-      content: "";
-      width: 65px;
-      height: 5px;
-      background-color: $white-font-color;
-      margin: 70px auto 0 auto;
     }
   }
   button {
@@ -51,13 +55,13 @@
       transition: all 0.5s;
     }
   }
-  .slider {
+  .nav-slider {
     width: 62.5%;
     margin: 155px auto 0 auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    .block {
+    .nav-slider__button {
       width: 20%;
       height: 45px;
       display: flex;
@@ -65,7 +69,7 @@
       position: relative;
       color: $white-font-color;
       font-family: $headers-font;
-      transition: all 1s;
+      transition: all 5s;
       cursor: pointer;
       border-top: 5px solid $white-font-color;
       p {
@@ -83,7 +87,7 @@
         left: 0;
         right: 100%;
         border-top: 5px solid $pink-color;
-        transition: all 1s;
+        transition: all 5s;
       }
       &:hover:before {
         right: 0;

@@ -1,0 +1,44 @@
+@import "../utilities/variables";
+@import "../base/base";
+
+
+.slick-dots {
+  display: flex;
+  li {
+    margin: 0 50px;
+  }
+}
+//.dot {
+//  height: 45px;
+//  display: flex;
+//  align-items: flex-end;
+//  position: relative;
+//  color: $white-font-color;
+//  font-family: $headers-font;
+//  transition: all 1s;
+//  cursor: pointer;
+//  border-top: 5px solid $white-font-color;
+//  p {
+//    font-size: 18px;
+//    span {
+//      font-weight: bold;
+//      font-size: 24px;
+//      height: 25px;
+//    }
+//  }
+//  &::before {
+//    content: '';
+//    position: absolute;
+//    top: -5px;
+//    left: 0;
+//    right: 100%;
+//    border-top: 5px solid $pink-color;
+//    transition: all 1s;
+//  }
+//  &:hover:before {
+//    right: 0;
+//  }
+//}
+
+
+
