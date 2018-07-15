@@ -1,4 +1,5 @@
 @import "../utilities/variables.scss";
+@import "../utilities/mixins.scss"
 @import "../base/base.scss";
 
 .pisc {
@@ -21,7 +22,7 @@
       @include small-sizes-img;
     }
     &:nth-child(2) {
-      //margin: 20px 28px 0 28px;
+      margin: 20px 28px 0 28px;
     }
     .image-container {
       width: 380px;
