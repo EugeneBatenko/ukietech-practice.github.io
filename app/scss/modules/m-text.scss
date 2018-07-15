@@ -1,28 +1,25 @@
 @import "../utilities/variables.scss";
-@import "../utilities/mixins.scss"
+@import "../utilities/mixins.scss";
 @import "../base/base.scss";
 
 .pisc {
-  //width: 63%;
+  width: 63%;
   //height: 260px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  //position: relative;
-  //transition: all 1s;
   .picture {
     width: 380px;
     height: 250px;
     position: relative;
     background-color: $green-main-color;
-    //z-index: 100;
     margin-top: 20px;
-    @media screen and(max-width: 480px) {
-      @include small-sizes-img;
-    }
     &:nth-child(2) {
       margin: 20px 28px 0 28px;
+    }
+    @media screen and(max-width: 480px) {
+      @include small-sizes-img;
     }
     .image-container {
       width: 380px;

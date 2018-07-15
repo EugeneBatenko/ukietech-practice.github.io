@@ -31,6 +31,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 .container-wrapper {
   width: 100%;
   height: 100%;
@@ -650,6 +653,7 @@ p {
   font-family: "Roboto", sans-serif; }
 
 .pisc {
+  width: 63%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,6 +669,8 @@ p {
     position: relative;
     background-color: #95e1d3;
     margin-top: 20px; }
+    .pisc .picture:nth-child(2) {
+      margin: 20px 28px 0 28px; }
     @media screen and (max-width: 480px) {
       .pisc .picture {
         width: 300px;
