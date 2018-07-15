@@ -1,0 +1,91 @@
+@import "../utilities/variables.scss";
+@import "../base/base.scss";
+
+.pisc {
+  //width: 63%;
+  //height: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  //position: relative;
+  //transition: all 1s;
+  .picture {
+    width: 380px;
+    height: 250px;
+    position: relative;
+    background-color: $green-main-color;
+    //z-index: 100;
+    margin-top: 20px;
+    @media screen and(max-width: 480px) {
+      @include small-sizes-img;
+    }
+    &:nth-child(2) {
+      //margin: 20px 28px 0 28px;
+    }
+    .image-container {
+      width: 380px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      @media screen and(max-width: 480px) {
+        @include small-sizes-img;
+      }
+      &::before {
+        content: "\f0c0\A SUPER TEAM";
+        position: absolute;
+        text-align: center;
+        vertical-align: text-bottom;
+        white-space: pre;
+        color: $white-font-color;
+        font-family: FontAwesome, $headers-font;
+        font-weight: 700;
+        font-size: 18px;
+        opacity: 0;
+        z-index: 10;
+        transition: all 1s;
+      }
+      &::after {
+        content: '';
+        width: 380px;
+        height: 250px;
+        position: absolute;
+        background-image: linear-gradient(to top,
+                rgba(252, 227, 138, 0.9) 0%,
+                rgba(243, 129, 129, 0.9) 100%);
+        z-index: 1;
+        opacity: 0;
+        transition: all 1s;
+        @media screen and(max-width: 480px) {
+          @include small-sizes-img;
+        }
+      }
+      &:hover {
+        top: -10px;
+        left: -10px;
+        transition: all 1s;
+        &::before {
+          top: calc(50% - 20px);
+          opacity: 1;
+          transition: all 1s;
+        }
+        &::after {
+          opacity: 1;
+          transition: all 1s;
+        }
+      }
+    }
+    .second-container {
+      &::before {
+        content: "\f025\A SOME HEADPHONES";
+      }
+    }
+    .third-container {
+      &::before {
+        content: "\f06c\A PLANT.. ONLY PLANT";
+      }
+    }
+  }
+}

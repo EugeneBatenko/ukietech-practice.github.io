@@ -1,6 +1,10 @@
 
-//Layouts
-@import "base/base";
-@import "layouts/l-header";
-@import "layouts/l-banner-section";
-@import "modules/m-slider";
+//BASE
+@import "base/base.scss";
+
+//LAYOUTS
+@import "layouts/l-header.scss";
+@import "layouts/l-banner-section.scss";
+@import "layouts/l-about-us.scss";
+//MODULES
+@import "modules/m-slider.scss";

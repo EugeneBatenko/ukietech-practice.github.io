@@ -5,60 +5,67 @@
     <title>MoGo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement("picture");
+    </script>
+    <script src="../js/picturefill.min.js" async></script>
 </head>
 <body>
 <div class="container-wrapper">
-    <section class="l-header-banner">
-        <header>
-            <div class="logo">
-                <h1>MoGo</h1>
-            </div>
-            <nav class="desktop-nav">
-                <ul>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">WORK</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#" class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                    <li>
-                        <form id="search">
-                            <input id="search__input"
-                                   placeholder="Enter your search term..."
-                                   type="search"
-                                   name="search">
-                        </form>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="mobile-nav">
-                <div class="hamburger">
-                    <div class="container" onclick="hamburger(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
+    <header id="header">
+        <div class="logo">
+            <h1>MoGo</h1>
+        </div>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">WORK</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#" class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li>
+                    <form id="search">
+                        <input id="search__input"
+                               placeholder="Enter your search term..."
+                               type="search"
+                               name="search">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav">
+            <div class="hamburger">
+                <div class="container" onclick="hamburger(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
                 </div>
-                <ul class="mobile-ul" id="mobile-ul">
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">WORK</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <div class="shop-n-search">
-                        <a href="#" class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i> SHOP CART</a>
-                        <form id="mob-search">
-                            <input  placeholder="Enter your search term..."
-                                    type="search"
-                                    name="search">
-                        </form>
-                    </div>
-                </ul>
+            </div>
+            <ul class="mobile-ul" id="mobile-ul">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">WORK</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <div class="shop-n-search">
+                    <a href="#" class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i> SHOP CART</a>
+                    <form id="mob-search">
+                        <input placeholder="Enter your search term..."
+                               type="search"
+                               name="search">
+                    </form>
+                </div>
+            </ul>
 
-            </nav>
-        </header>
+        </nav>
+    </header>
+    <section class="l-header-banner">
         <div class="l-header-banner__slider">
             <!-- ONES SLIDES -->
             <div class="slider-main">
@@ -85,28 +92,78 @@
             </div>
             <!-- </> -->
             <!-- NAVIGATION SLIDES -->
-            <div class="nav-slider">
+            <div class="nav-slider progressBarContainer">
                 <div class="nav-slider__button">
+                    <span data-slick-index="0" class="progress-bar"></span>
                     <p><span>01</span> INTRO</p>
                 </div>
                 <div class="nav-slider__button">
+                    <span data-slick-index="1" class="progress-bar"></span>
                     <p><span>02</span> WORK</p>
                 </div>
                 <div class="nav-slider__button">
+                    <span data-slick-index="2" class="progress-bar"></span>
                     <p><span>03</span> ABOUT</p>
                 </div>
                 <div class="nav-slider__button">
+                    <span data-slick-index="3" class="progress-bar"></span>
                     <p><span>04</span> CONTACT</p>
                 </div>
             </div>
             <!-- </> -->
         </div>
     </section>
+    <section class="l-about-us">
+        <div class="m-text">
+            <h3>Story about us</h3>
+            <h2>What we do</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. </p>
+        <div class="pisc">
+            <div class="picture">
+                <div class="image-container first-container">
+                <picture>
+                    <!--[if IE 9]>
+                    <video style="display: none;"><![endif]-->
+                    <source srcset="../img/small-super-team-img.jpg" media="(max-width: 768px)">
+                    <!--[if IE 9]></video><![endif]-->
+                    <img src="../img/default-super-team-img.jpg" alt="default-super-team-img">
+                </picture>
+                </div>
+            </div>
+
+            <div class="picture">
+                <div class="image-container second-container">
+                <picture>
+                    <!--[if IE 9]>
+                    <video style="display: none;"><![endif]-->
+                    <source srcset="../img/small-headphones-img.jpg" media="(max-width: 768px)">
+                    <!--[if IE 9]></video><![endif]-->
+                    <img src="../img/default-headphones-img.jpg" alt="default-super-team-img">
+                </picture>
+                </div>
+            </div>
+            <div class="picture">
+                <div class="image-container third-container">
+                <picture>
+                    <!--[if IE 9]>
+                    <video style="display: none;"><![endif]-->
+                    <source srcset="../img/small-some-plant-img.jpg" media="(max-width: 768px)">
+                    <!--[if IE 9]></video><![endif]-->
+                    <img src="../img/default-some-plant-img.jpg" alt="default-super-team-img">
+                </picture>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 <script src="https://use.fontawesome.com/ef2fa877d8.js"></script>
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+<script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

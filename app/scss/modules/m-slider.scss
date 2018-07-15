@@ -1,44 +1,81 @@
-@import "../utilities/variables";
-@import "../base/base";
+@import "../utilities/variables.scss";
+@import "../base/base.scss";
 
-
-.slick-dots {
-  display: flex;
-  li {
-    margin: 0 50px;
+.slider-main {
+  position: relative;
+  &__slide {
+    button {
+      display: block;
+      margin: 120px auto 0 auto;
+      min-width: 160px;
+      height: 40px;
+      transition: all 0.5s;
+      cursor: pointer;
+      &:hover {
+        color: $pink-color;
+        border: 3px solid $pink-color;
+        transition: all 0.5s;
+      }
+    }
   }
 }
-//.dot {
-//  height: 45px;
-//  display: flex;
-//  align-items: flex-end;
-//  position: relative;
-//  color: $white-font-color;
-//  font-family: $headers-font;
-//  transition: all 1s;
-//  cursor: pointer;
-//  border-top: 5px solid $white-font-color;
-//  p {
-//    font-size: 18px;
-//    span {
-//      font-weight: bold;
-//      font-size: 24px;
-//      height: 25px;
-//    }
-//  }
-//  &::before {
-//    content: '';
-//    position: absolute;
-//    top: -5px;
-//    left: 0;
-//    right: 100%;
-//    border-top: 5px solid $pink-color;
-//    transition: all 1s;
-//  }
-//  &:hover:before {
-//    right: 0;
-//  }
-//}
+
+.nav-slider {
+  width: 62.5%;
+  margin: 245px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and(max-width: 1024px) {
+    width: 85%;
+    flex-wrap: wrap;
+    margin: 100px auto 0 auto;
+  }
+  .nav-slider__button {
+    //display: block;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 15px 1vmax 15px 0;
+    cursor: pointer;
+    color: $white-font-color;
+    font-family: $headers-font;
+    @media screen and(max-width: 1024px) {
+      width: 35vmax;
+      //flex-wrap: wrap;
+    }
+    @media screen and(max-width: 480px) {
+      //flex-wrap: wrap;
+      width: 22vmax;
+      margin: 0;
+    }
+    .progress-bar {
+      width: 100%;
+      height: 5px;
+      background-color: $white-font-color;
+      //display: block;
+      .in-progress {
+        background-color: $pink-color;
+        width: 0;
+        height: 5px;
+      }
+    }
+    p {
+      margin-top: 24px;
+      font-size: 18px;
+      @media screen and(max-width: 1024px) {
+        font-size: 3vmax;
+        margin-top: 10px;
+      }
+      span {
+        font-weight: bold;
+        font-size: 24px;
+        height: 25px;
+      }
+    }
+  }
+}
 
 
 

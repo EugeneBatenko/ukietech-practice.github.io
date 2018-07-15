@@ -5,7 +5,22 @@ var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     reporter = require('postcss-reporter'),
     syntax_scss = require('postcss-scss'),
-    stylelint = require('stylelint');
+    stylelint = require('stylelint'),
+    path = require('path');
+
+    const stylelintConfig = {
+        configFile: path.resolve('stylelint.json')
+    };
+
+    const processors = [
+        stylelint(stylelintConfig),
+        reporter({
+            clearMessages: true,
+            throwError: true,
+            formatter: 'string',
+            console: true
+     }),
+    ];
 
 gulp.task('sass', function () {
     return gulp.src('app/scss/**/main.scss')
@@ -18,26 +33,8 @@ gulp.task('sass', function () {
         .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task("scss-lint", function() {
-    // Stylelint config rules
-    var stylelintConfig = {
-        "extends": ["stylelint-config-standard", "stylelint-config-recommended-scss", stylelint-scss],
-        "rules": {
-            "block-no-empty": null,
-            "unit-whitelist": ["em", "rem", "s"]
-        }
-    }
 
-    var processors = [
-        stylelint(stylelintConfig),
-        reporter({
-            clearMessages: true,
-            throwError: true,
-            formatter: 'string',
-            console: true
-        }),
-    ];
-
+gulp.task("scss-lint", () => {
     return gulp.src('app/scss/**/*.scss')
         .pipe(postcss(processors, {syntax: syntax_scss}));
 });
@@ -56,4 +53,4 @@ gulp.task('watch', ['browser-sync', 'sass'], function () {
 
 });
 
-gulp.task('default',['watch']);
+gulp.task('default', ['watch']);

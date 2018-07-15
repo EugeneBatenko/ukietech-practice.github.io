@@ -1,11 +1,13 @@
-@import "../utilities/variables";
-@import "../base/base";
+@import "../utilities/variables.scss";
+@import "../base/base.scss";
 
 .l-header-banner {
   height: 100%;
-  background-image: linear-gradient(to top,
+  background: linear-gradient(to top,
           rgba(252, 227, 138, 0.9) 0%,
-          rgba(243, 129, 129, 0.9) 100%);
+          rgba(243, 129, 129, 0.9) 100%),
+          url('../img/header-bg.jpg');
+  background-size: cover;
   &__slider {
     .slider-main {
       .slider-main__slide {
@@ -35,62 +37,12 @@
       }
       &::after {
         display: block;
+        //position: absolute;
         content: "";
         width: 65px;
         height: 5px;
         background-color: $white-font-color;
-        margin: 70px auto 0 auto;
-      }
-    }
-  }
-  button {
-    display: block;
-    margin: 50px auto 0 auto;
-    width: 160px;
-    height: 40px;
-    transition: all 0.5s;
-    &:hover {
-      color: $pink-color;
-      border: 3px solid $pink-color;
-      transition: all 0.5s;
-    }
-  }
-  .nav-slider {
-    width: 62.5%;
-    margin: 155px auto 0 auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    .nav-slider__button {
-      width: 20%;
-      height: 45px;
-      display: flex;
-      align-items: flex-end;
-      position: relative;
-      color: $white-font-color;
-      font-family: $headers-font;
-      transition: all 5s;
-      cursor: pointer;
-      border-top: 5px solid $white-font-color;
-      p {
-        font-size: 18px;
-        span {
-          font-weight: bold;
-          font-size: 24px;
-          height: 25px;
-        }
-      }
-      &::before {
-        content: '';
-        position: absolute;
-        top: -5px;
-        left: 0;
-        right: 100%;
-        border-top: 5px solid $pink-color;
-        transition: all 5s;
-      }
-      &:hover:before {
-        right: 0;
+        margin: -90px auto 0 auto;
       }
     }
   }
