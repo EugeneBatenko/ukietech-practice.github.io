@@ -663,6 +663,9 @@ p {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto; }
+  @media screen and (max-width: 480px) {
+    .pisc {
+      width: 100%; } }
   .pisc .picture {
     width: 380px;
     height: 250px;
@@ -671,10 +674,14 @@ p {
     margin-top: 20px; }
     .pisc .picture:nth-child(2) {
       margin: 20px 28px 0 28px; }
+      @media screen and (max-width: 480px) {
+        .pisc .picture:nth-child(2) {
+          margin: 20px auto; } }
     @media screen and (max-width: 480px) {
       .pisc .picture {
         width: 300px;
-        height: 197px; } }
+        height: 197px;
+        margin: 0 auto; } }
     .pisc .picture .image-container {
       width: 380px;
       height: 250px;

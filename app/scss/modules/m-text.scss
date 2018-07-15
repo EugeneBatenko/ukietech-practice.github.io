@@ -9,6 +9,9 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
+  @media screen and(max-width: 480px) {
+    width: 100%;
+  }
   .picture {
     width: 380px;
     height: 250px;
@@ -17,9 +20,13 @@
     margin-top: 20px;
     &:nth-child(2) {
       margin: 20px 28px 0 28px;
+      @media screen and(max-width: 480px) {
+        margin: 20px auto;
+      }
     }
     @media screen and(max-width: 480px) {
       @include small-sizes-img;
+      margin: 0 auto;
     }
     .image-container {
       width: 380px;
