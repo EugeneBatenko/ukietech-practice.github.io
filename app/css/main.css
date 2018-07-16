@@ -668,7 +668,7 @@ p {
       width: 100%; } }
   .pisc .picture {
     width: 380px;
-    height: 250px;
+    height: 248px;
     position: relative;
     background-color: #95e1d3;
     margin-top: 20px; }
@@ -685,6 +685,8 @@ p {
     .pisc .picture .image-container {
       width: 380px;
       height: 250px;
+      top: 0;
+      left: 0;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -694,7 +696,9 @@ p {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      position: absolute; }
+      position: absolute;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s; }
       @media screen and (max-width: 480px) {
         .pisc .picture .image-container {
           width: 300px;
@@ -717,6 +721,7 @@ p {
         content: '';
         width: 380px;
         height: 250px;
+        top: -2px;
         position: absolute;
         background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
         background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
@@ -727,12 +732,13 @@ p {
         @media screen and (max-width: 480px) {
           .pisc .picture .image-container::after {
             width: 300px;
-            height: 197px; } }
+            height: 197px;
+            top: -2px; } }
       .pisc .picture .image-container:hover {
         top: -10px;
         left: -10px;
-        -webkit-transition: all 1s;
-        transition: all 1s; }
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s; }
         .pisc .picture .image-container:hover::before {
           top: calc(50% - 20px);
           opacity: 1;
@@ -745,7 +751,7 @@ p {
     .pisc .picture .second-container::before {
       content: "\f025\A SOME HEADPHONES"; }
     .pisc .picture .third-container::before {
-      content: "\f06c\A PLANT.. ONLY PLANT"; }
+      content: "\f06c\A PLANT... ONLY PLANT"; }
 
 .l-about-us {
   margin-top: 90px;

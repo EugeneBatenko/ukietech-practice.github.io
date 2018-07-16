@@ -14,7 +14,7 @@
   }
   .picture {
     width: 380px;
-    height: 250px;
+    height: 248px;
     position: relative;
     background-color: $green-main-color;
     margin-top: 20px;
@@ -31,10 +31,14 @@
     .image-container {
       width: 380px;
       height: 250px;
+      top: 0;
+      left: 0;
       display: flex;
       align-items: center;
       justify-content: center;
       position: absolute;
+      transition: all 0.4s;
+      //transition: left 1s linear;
       @media screen and(max-width: 480px) {
         @include small-sizes-img;
       }
@@ -56,6 +60,9 @@
         content: '';
         width: 380px;
         height: 250px;
+        //Fix positioning
+        top: -2px;
+        //
         position: absolute;
         background-image: linear-gradient(to top,
                 rgba(252, 227, 138, 0.9) 0%,
@@ -65,12 +72,14 @@
         transition: all 1s;
         @media screen and(max-width: 480px) {
           @include small-sizes-img;
+          top: -2px;
         }
       }
       &:hover {
         top: -10px;
         left: -10px;
-        transition: all 1s;
+        transition: all 0.4s;
+        //transition: left 1s linear;
         &::before {
           top: calc(50% - 20px);
           opacity: 1;
@@ -89,7 +98,7 @@
     }
     .third-container {
       &::before {
-        content: "\f06c\A PLANT.. ONLY PLANT";
+        content: "\f06c\A PLANT... ONLY PLANT";
       }
     }
   }
