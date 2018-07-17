@@ -1,0 +1,53 @@
+@import "../utilities/variables.scss";
+@import "../base/base.scss";
+
+@media screen and (min-width: 1200px) {
+  .m-services-block {
+    &:nth-child(-n+3) {
+      padding-bottom: 24.5px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    &:nth-child(n+4) {
+      padding-top: 24.5px;
+    }
+  }
+}
+//.m-services-block {
+//  &:nth-child(-n+3) {
+//    padding-bottom: 24.5px;
+//    border-bottom: 1px solid #e5e5e5;
+//  }
+//  &:nth-child(n+4) {
+//    padding-top: 24.5px;
+//  }
+//}
+
+.m-services-block {
+  width: 33.33%;
+  display: flex;
+  @media screen and (max-width: 1200px) {
+    width: 320px;
+    margin-bottom: 28px;
+  }
+  .icon {
+    font-size: 32px;
+    margin: 0 27px;
+    color: $green-main-color;
+  }
+  .service-description {
+    span {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333333;
+    }
+    p {
+      width: 270px;
+      line-height: 24px;
+      font-size: 15px;
+      color: $color-font-descriptiion;
+      @media screen and (max-width: 1200px) {
+        width: 240px;
+      }
+    }
+  }
+}

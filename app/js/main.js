@@ -1,12 +1,13 @@
 //STICKY FUNCTION FOR NAVIGATION
 // var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (currentScrollPos != 0) {
         document.getElementById("header").style.background = "#f38181";
     } else {
         document.getElementById("header").style.background = "rgba(0,0,0,.0)";
     }
+
 }
 //Animation of hamburger
 var mob_menu = document.getElementById("mobile-ul");
@@ -82,9 +83,36 @@ $(document).ready(function () {
     });
 });
 
-//HOVER FOR PICTURE IN SECTION ABOUT-US
-// var picture = document.getElementById("picture");
-// // var pseudo = document.querySelector(".pisc picture picture ::before");
-// function ImgHov() {
-//     picture.style.top = "10px";
-// }
+//NUMBER COUNTER ANIMATION
+var a = 0;
+$(window).scroll(function () {
+
+    var oTop = $('.m-numbers').offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > oTop) {
+        $('.m-numbers__counter').each(function () {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+            $({
+                countNum: $this.text()
+            }).animate({
+                    countNum: countTo
+                },
+                {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function () {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function () {
+                        $this.text(this.countNum);
+                        //alert('finished');
+                    }
+
+                });
+        });
+        a = 1;
+    }
+});
+
+
+

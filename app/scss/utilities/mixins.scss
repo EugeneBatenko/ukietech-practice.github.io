@@ -1,15 +1,5 @@
 @import "../utilities/variables.scss";
 
-@mixin after-line {
-  display: block;
-  //position: absolute;
-  content: "";
-  width: 65px;
-  height: 5px;
-  background-color: $pink-color;
-  margin: 40px auto 0 auto;
-}
-
 @mixin small-sizes-img {
   width: 300px;
   height: 197px;

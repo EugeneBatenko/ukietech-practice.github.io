@@ -1,0 +1,21 @@
+@import "../utilities/variables.scss";
+@import "../modules/m-text.scss";
+@import "../modules/m-service-blocks.scss";
+@import "../base/base.scss";
+
+.l-services {
+  width: 1200px;
+  margin: 100px auto 120px auto;
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+  }
+  &__wrapper {
+    margin-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (max-width: 1200px) {
+      justify-content: space-around;
+    }
+  }
+}

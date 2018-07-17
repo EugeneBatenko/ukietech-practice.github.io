@@ -2,104 +2,14 @@
 @import "../utilities/mixins.scss";
 @import "../base/base.scss";
 
-.pisc {
-  width: 63%;
-  //height: 260px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  @media screen and(max-width: 480px) {
-    width: 100%;
-  }
-  .picture {
-    width: 380px;
-    height: 248px;
-    position: relative;
-    background-color: $green-main-color;
-    margin-top: 20px;
-    &:nth-child(2) {
-      margin: 20px 28px 0 28px;
-      @media screen and(max-width: 480px) {
-        margin: 20px auto;
-      }
-    }
-    @media screen and(max-width: 480px) {
-      @include small-sizes-img;
-      margin: 0 auto;
-    }
-    .image-container {
-      width: 380px;
-      height: 250px;
-      top: 0;
-      left: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      transition: all 0.4s;
-      //transition: left 1s linear;
-      @media screen and(max-width: 480px) {
-        @include small-sizes-img;
-      }
-      &::before {
-        content: "\f0c0\A SUPER TEAM";
-        position: absolute;
-        text-align: center;
-        vertical-align: text-bottom;
-        white-space: pre;
-        color: $white-font-color;
-        font-family: FontAwesome, $headers-font;
-        font-weight: 700;
-        font-size: 18px;
-        opacity: 0;
-        z-index: 10;
-        transition: all 1s;
-      }
-      &::after {
-        content: '';
-        width: 380px;
-        height: 250px;
-        //Fix positioning
-        top: -2px;
-        //
-        position: absolute;
-        background-image: linear-gradient(to top,
-                rgba(252, 227, 138, 0.9) 0%,
-                rgba(243, 129, 129, 0.9) 100%);
-        z-index: 1;
-        opacity: 0;
-        transition: all 1s;
-        @media screen and(max-width: 480px) {
-          @include small-sizes-img;
-          top: -2px;
-        }
-      }
-      &:hover {
-        top: -10px;
-        left: -10px;
-        transition: all 0.4s;
-        //transition: left 1s linear;
-        &::before {
-          top: calc(50% - 20px);
-          opacity: 1;
-          transition: all 1s;
-        }
-        &::after {
-          opacity: 1;
-          transition: all 1s;
-        }
-      }
-    }
-    .second-container {
-      &::before {
-        content: "\f025\A SOME HEADPHONES";
-      }
-    }
-    .third-container {
-      &::before {
-        content: "\f06c\A PLANT... ONLY PLANT";
-      }
-    }
+.m-text {
+  text-align: center;
+  &::after {
+    display: block;
+    content: "";
+    width: 65px;
+    height: 5px;
+    background-color: $pink-color;
+    margin: 40px auto 0 auto;
   }
 }

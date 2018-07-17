@@ -1,0 +1,33 @@
+@import "../utilities/variables.scss";
+@import "../base/base.scss";
+
+.m-numbers {
+  width: 20%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $white-font-color;
+  border-left: 1px solid $white-opacity;
+  @media screen and(max-width: 768px) {
+    justify-content: flex-start;
+    height: 22vmax;
+  }
+  &:last-child {
+    border-right: 1px solid $white-opacity;
+  }
+  &__counter {
+    font-size: 3.75vmax;
+    @media screen and(max-width: 768px) {
+      font-size: 8vmax;
+    }
+  }
+  span {
+    font-size: 0.73vmax;
+    @media screen and(max-width: 768px) {
+      font-size: 10px;
+      text-align: center;
+    }
+  }
+}

@@ -1,16 +1,11 @@
 @import "../utilities/variables.scss";
 @import "../utilities/mixins.scss";
 @import "../base/base.scss";
+@import "../modules/m-about-us-picture.scss";
 @import "../modules/m-text.scss";
 
 .l-about-us {
   margin-top: 90px;
-  text-align: center;
-  .m-text {
-    &::after {
-      @include after-line;
-    }
-  }
   p {
     width: 49.54%;
     margin: 45px auto 100px auto;
