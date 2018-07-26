@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     path = require('path');
 
     const stylelintConfig = {
-        configFile: path.resolve('stylelint.json')
+        configFile: path.resolve('.stylelintrc')
     };
 
     const processors = [
@@ -35,7 +35,7 @@ gulp.task('sass', function () {
 
 
 gulp.task("scss-lint", () => {
-    return gulp.src('app/scss/**/*.scss')
+    return gulp.src('app/scss/**/main.scss')
         .pipe(postcss(processors, {syntax: syntax_scss}));
 });
 

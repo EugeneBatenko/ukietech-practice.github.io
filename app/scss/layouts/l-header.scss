@@ -1,53 +1,60 @@
-@import "../base/base";
+@import "../utilities/variables.scss";
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   transition: all 1s;
-  .logo {
-    display: flex;
-    //align-items: center;
-  }
   .desktop-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    .logo {
+      h1 {
+        padding-left: 7px;
+      }
+    }
     ul {
       display: flex;
       justify-content: space-between;
+      width: 100%;
+      max-width: 610px;
+      padding-top: 10px;
       li {
-        padding-left: 35px;
-        &:first-child {
-          padding-left: 0;
-        }
-        a:not(.icon) {
+        a {
           padding-bottom: 10px;
           font-size: 14px;
+          font-weight: 400;
+          text-transform: uppercase;
           border-bottom: 3px solid $full-transparent-color;
           &:hover {
-            border-bottom: 3px solid $hover-link-color;
+            border-bottom: 3px solid $yellow-hover-link-color;
           }
         }
+      }
+      .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        min-width: 65px;
         #search {
+          padding-left: 35px;
           input {
             height: 25px;
             background-color: $full-transparent-color;
             &::placeholder {
-              color: $hover-link-color;
+              color: $yellow-hover-link-color;
             }
           }
           input[type=search] {
             width: 30px;
             height: 20px;
             padding-left: 30px;
-            background: url('../../img/magnifying-glass.svg') no-repeat 5px center;
+            background: url('../img/magnifying-glass.svg') no-repeat 5px center;
             color: transparent;
             cursor: pointer;
             border-radius: 20px;
             transition: all 1s ease;
             &:focus {
               width: 200px;
-              color: $hover-link-color;
+              color: $yellow-hover-link-color;
               background-color: rgba(255, 255, 255, 0.3);
               transition: all 1s ease;
               cursor: auto;
@@ -64,11 +71,17 @@ header {
   .mobile-nav {
     display: none;
     position: relative;
+    .logo {
+      h1 {
+        margin: 20px;
+      }
+    }
     @media screen and(max-width: 1024px) {
       display: block;
     }
     .hamburger {
       position: fixed;
+      right: 50px;
       top: 20px;
       width: 30px;
       height: 30px;
@@ -130,7 +143,7 @@ header {
             background-color: $full-transparent-color;
             padding-left: 4vmax;
             &::placeholder {
-              color: $hover-link-color;
+              color: $yellow-hover-link-color;
             }
           }
           input[type=search] {
@@ -143,7 +156,7 @@ header {
                     rgba(255, 255, 255, 0.1);
             //background-size: contain;
             font-size: 12px;
-            color: $hover-link-color;
+            color: $yellow-hover-link-color;
             cursor: pointer;
             border-radius: 10px;
             transition: all 1s ease;

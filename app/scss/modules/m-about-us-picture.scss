@@ -1,14 +1,17 @@
 @import "../utilities/variables.scss";
 @import "../utilities/mixins.scss";
-@import "../base/base.scss";
 
 .pisc {
-  width: 63%;
+  max-width: 1200px;
   //height: 260px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
+  //justify-content: center;
+  //margin: 0 auto;
+  @media screen and(max-width: 1600px) {
+    width: 100%;
+    margin: 0;
+  }
   @media screen and(max-width: 480px) {
     width: 100%;
   }
@@ -19,7 +22,7 @@
     background-color: $green-main-color;
     margin-top: 20px;
     &:nth-child(2) {
-      margin: 20px 28px 0 28px;
+      //margin: 20px 28px 0 28px;
       @media screen and(max-width: 768px) {
         margin: 20px auto;
       }

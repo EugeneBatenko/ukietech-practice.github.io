@@ -18,28 +18,31 @@
 <body>
 <div class="container-wrapper">
     <header id="header">
-        <div class="logo">
-            <h1>MoGo</h1>
-        </div>
-        <nav class="desktop-nav">
+        <nav class="desktop-nav row">
+            <div class="logo">
+                <h1>MoGo</h1>
+            </div>
             <ul>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICE</a></li>
-                <li><a href="#">WORK</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#" class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                <li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">work</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
+                <div class="nav-buttons">
+                    <a href="#" class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                     <form id="search">
                         <input id="search__input"
                                placeholder="Enter your search term..."
                                type="search"
                                name="search">
                     </form>
-                </li>
+                </div>
             </ul>
         </nav>
         <nav class="mobile-nav">
+            <div class="logo">
+                <h1>MoGo</h1>
+            </div>
             <div class="hamburger">
                 <div class="container" onclick="hamburger(this)">
                     <div class="bar1"></div>
@@ -72,27 +75,27 @@
                 <div class="slider-main__slide">
                     <h3>Creative Template</h3>
                     <h2>Welcome<br>to MoGo</h2>
-                    <button type="button">LEARN MORE</button>
+                    <button type="button">learn more</button>
                 </div>
                 <div class="slider-main__slide">
                     <h3>Creative Template</h3>
                     <h2>Welcome<br>to MoGo</h2>
-                    <button type="button">LEARN MORE</button>
+                    <button type="button">learn more</button>
                 </div>
                 <div class="slider-main__slide">
                     <h3>Creative Template</h3>
                     <h2>Welcome<br>to MoGo</h2>
-                    <button type="button">LEARN MORE</button>
+                    <button type="button">learn more</button>
                 </div>
                 <div class="slider-main__slide">
                     <h3>Creative Template</h3>
                     <h2>Welcome<br>to MoGo</h2>
-                    <button type="button">LEARN MORE</button>
+                    <button type="button">learn more</button>
                 </div>
             </div>
             <!-- </> -->
             <!-- NAVIGATION SLIDES -->
-            <div class="nav-slider progressBarContainer">
+            <div class="nav-slider progressBarContainer row">
                 <div class="nav-slider__button">
                     <span data-slick-index="0" class="progress-bar"></span>
                     <p><span>01</span> INTRO</p>
@@ -184,8 +187,8 @@
     </section>
     <section class="l-services">
         <div class="m-text">
-            <h3>Story about us</h3>
-            <h2>What we do</h2>
+            <h3>We work with</h3>
+            <h2>Amazing services</h2>
         </div>
         <div class="l-services__wrapper">
             <div class="m-services-block">
@@ -232,9 +235,14 @@
             </div>
         </div>
     </section>
+    <section class="l-features">
+        <div class="m-text">
+            <h3>For all device</h3>
+            <h2>UNIQUE DESIGN</h2>
+        </div>
+    </section>
 </div>
 <script src="https://use.fontawesome.com/ef2fa877d8.js"></script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
 <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.js"></script>

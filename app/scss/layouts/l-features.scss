@@ -1,0 +1,14 @@
+@import "../utilities/variables.scss";
+@import "../modules/m-text.scss";
+
+.l-features {
+  width: 100%;
+  height: 850px;
+  padding-top: 120px;
+  background: $transparent-color-bg url("../img/features-bg.jpg");
+  background-blend-mode: lighten;
+  background-size: cover;
+  .m-text {
+    margin-top: 110px;
+  }
+}

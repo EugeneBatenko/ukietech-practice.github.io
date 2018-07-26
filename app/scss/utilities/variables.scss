@@ -1,16 +1,14 @@
 //Colors variables
 $white-font-color: #fff;
 $white-opacity: rgba(255,255,255,0.3);
-$hover-link-color: #fce38a;
+$yellow-hover-link-color: #fce38a;
 $pink-color: #f38181;
 $green-main-color: #95e1d3;
-$full-transparent-color: rgba(0,0,0,.0);
+$full-transparent-color: rgba(0,0,0,0);
+$transparent-color-bg: rgba(255,255,255,0.85);
 $color-font-descriptiion: #999999;
 //Fonts variables
 $headers-font: 'Montserrat', sans-serif;
 $header-font-cursive: 'Kaushan Script', cursive;
 $main-font: 'Roboto', sans-serif;
-//Font import
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+

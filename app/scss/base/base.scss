@@ -1,23 +1,23 @@
 @import "../utilities/variables.scss";
+
 .container-wrapper {
   width: 100%;
-  height: 100%;
+  //height: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 header {
-  width: 62.7%;
-  height: 30px;
-  margin: 0 auto;
-  padding: 20px 18.65% 5px 18.65%;
-  //background-color: $pink-color;
+  width: 100%;
+  height: 80px;
   position: fixed;
   z-index: 1000;
   nav {
@@ -33,7 +33,7 @@ header {
           span {
             color: $white-font-color;
             &:hover {
-              color: $hover-link-color;
+              color: $yellow-hover-link-color;
             }
           }
         }
@@ -41,7 +41,6 @@ header {
     }
   }
 }
-
 input {
   border: none;
   outline: none;
@@ -58,7 +57,7 @@ a {
   color: $white-font-color;
   transition: all 0.6s;
   &:hover {
-    color: $hover-link-color;
+    color: $yellow-hover-link-color;
     transition: all 0.6s;
   }
 }
@@ -67,6 +66,7 @@ h1 {
   padding: 0;
   color: $white-font-color;
   font-family: $headers-font;
+  font-weight: 900;
   font-size: 30px;
 }
 h2 {

@@ -1,6 +1,5 @@
 @import "../utilities/variables.scss";
 @import "../modules/m-slider.scss";
-@import "../base/base.scss";
 
 .l-header-banner {
   height: 100%;
@@ -11,12 +10,13 @@
   background-size: cover;
   &__slider {
     .slider-main {
+      text-align: center;
       .slider-main__slide {
         h3 {
           font-size: 72px;
           color: $white-font-color;
-          text-align: center;
-          margin-top: 160px;
+          margin-top: 210px;
+          margin-bottom: 28px;
           @media screen and(max-width: 1024px) {
             font-size: 6vmax;
           }
@@ -25,7 +25,18 @@
           font-size: 150px;
           line-height: 140px;
           color: $white-font-color;
-          text-align: center;
+          font-weight: 700;
+          letter-spacing: -5px;
+          text-transform: uppercase;
+          &::after {
+            display: block;
+            //position: absolute;
+            content: "";
+            width: 60px;
+            height: 3px;
+            background-color: $white-font-color;
+            margin: 55px auto 50px auto;
+          }
           @media screen and(max-width: 1024px) {
             font-size: 15vmax;
             line-height: 20vmax;
@@ -35,15 +46,6 @@
             line-height: 14vmax;
           }
         }
-      }
-      &::after {
-        display: block;
-        //position: absolute;
-        content: "";
-        width: 65px;
-        height: 5px;
-        background-color: $white-font-color;
-        margin: -90px auto 0 auto;
       }
     }
   }
