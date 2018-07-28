@@ -1,18 +1,8 @@
 @import "../utilities/variables.scss";
-@import "../base/base.scss";
 @import "../modules/m-numbers.scss";
-@import "../modules/m-text.scss";
 
 .l-facts {
   width: 100%;
-  margin-top: 100px;
+  margin-bottom: 108px;
   background-color: $green-main-color;
-  &__wrapper {
-    width: 62.7%;
-    display: flex;
-    margin: 0 auto;
-    @media screen and(max-width: 768px) {
-      width: 95%;
-    }
-  }
 }

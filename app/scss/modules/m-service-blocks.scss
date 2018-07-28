@@ -3,34 +3,26 @@
 @media screen and (min-width: 1200px) {
   .m-services-block {
     &:nth-child(-n+3) {
-      padding-bottom: 24.5px;
+      padding-bottom: 55.5px;
       border-bottom: 1px solid #e5e5e5;
     }
     &:nth-child(n+4) {
-      padding-top: 24.5px;
+      padding-top: 45.5px;
     }
   }
 }
-//.m-services-block {
-//  &:nth-child(-n+3) {
-//    padding-bottom: 24.5px;
-//    border-bottom: 1px solid #e5e5e5;
-//  }
-//  &:nth-child(n+4) {
-//    padding-top: 24.5px;
-//  }
-//}
 
 .m-services-block {
-  width: 33.33%;
+  width: 33.3333%;
   display: flex;
   @media screen and (max-width: 1200px) {
     width: 320px;
     margin-bottom: 28px;
   }
   .icon {
+    text-align: center;
     font-size: 32px;
-    margin: 0 27px;
+    width: 75px;
     color: $green-main-color;
   }
   .service-description {

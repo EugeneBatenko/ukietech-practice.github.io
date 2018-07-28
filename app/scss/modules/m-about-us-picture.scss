@@ -2,18 +2,9 @@
 @import "../utilities/mixins.scss";
 
 .pisc {
-  max-width: 1200px;
-  //height: 260px;
-  display: flex;
-  flex-wrap: wrap;
-  //justify-content: center;
-  //margin: 0 auto;
-  @media screen and(max-width: 1600px) {
-    width: 100%;
-    margin: 0;
-  }
-  @media screen and(max-width: 480px) {
-    width: 100%;
+  @media screen and(max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
   }
   .picture {
     width: 380px;
@@ -22,7 +13,6 @@
     background-color: $green-main-color;
     margin-top: 20px;
     &:nth-child(2) {
-      //margin: 20px 28px 0 28px;
       @media screen and(max-width: 768px) {
         margin: 20px auto;
       }
@@ -41,7 +31,6 @@
       justify-content: center;
       position: absolute;
       transition: all 0.4s;
-      //transition: left 1s linear;
       @media screen and(max-width: 768px) {
         @include small-sizes-img;
       }

@@ -1,10 +1,14 @@
 //@import "../utilities/variables.scss";
-@import "../modules/m-text.scss";
 @import "../modules/m-service-blocks.scss";
 
 .l-services {
-  width: 1200px;
-  margin: 100px auto 120px auto;
+  margin-bottom: 130px;
+  flex-direction: column;
+  .m-text {
+    &::after {
+      margin: 0 auto;
+    }
+  }
   @media screen and (max-width: 1200px) {
     width: 90%;
   }

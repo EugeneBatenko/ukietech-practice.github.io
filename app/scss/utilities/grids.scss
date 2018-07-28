@@ -1,36 +1,37 @@
 //======================================================
 //Grid system for this layout with some bootstrap widths
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
 
 @media (min-width: 1200px) {
   .row {
     width: 100%;
     max-width: 1200px;
     min-width: 1024px;
-    margin: 0 auto;
   }
 }
 @media (max-width: 1024px) {
   .row {
-    width: 100%;
-    max-width: 992px;
+    //width: 100%;
+    max-width: 1024px;
     min-width: 768px;
-    margin: 0 auto;
   }
 }
 @media (max-width: 768px) {
   .row {
-    width: 100%;
+    //width: 100%;
     max-width: 720px;
     min-width: 576px;
-    margin: 0 auto;
   }
 }
 @media (max-width: 576px) {
   .row {
-    width: 100%;
+    //width: 100%;
     max-width: 540px;
     min-width: 320px;
-    margin: 0 auto;
   }
 }
 //======================================================

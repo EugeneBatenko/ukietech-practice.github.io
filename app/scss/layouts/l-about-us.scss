@@ -1,18 +1,17 @@
 @import "../utilities/variables.scss";
-@import "../utilities/mixins.scss";
 @import "../modules/m-about-us-picture.scss";
-@import "../modules/m-text.scss";
 
 .l-about-us {
-  margin-top: 90px;
+  margin-bottom: 110px;
   p {
-    width: 49.54%;
-    margin: 45px auto 100px auto;
+    width: 100%;
+    max-width: 955px;
+    margin: 0 auto 78px auto;
     font-size: 15px;
     color: $color-font-descriptiion;
     text-align: center;
     line-height: 24px;
-    @media screen and(max-width: 1280px) {
+    @media screen and(max-width: 1200px) {
       width: 80%;
     }
   }
