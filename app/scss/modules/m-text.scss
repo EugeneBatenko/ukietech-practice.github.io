@@ -18,3 +18,15 @@
     margin: 0 auto 42px auto;
   }
 }
+.m-description {
+  width: 100%;
+  max-width: 955px;
+  margin: 0 auto 78px auto;
+  font-size: 15px;
+  color: $color-font-descriptiion;
+  text-align: center;
+  line-height: 24px;
+  @media screen and(max-width: 1200px) {
+    width: 80%;
+  }
+}

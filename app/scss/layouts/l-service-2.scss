@@ -1,0 +1,13 @@
+@import "../modules/m-dropdown-button.scss";
+
+
+.l-service-2 {
+  flex-direction: column;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    .service-img-container {
+      max-width: 570px;
+    }
+  }
+}

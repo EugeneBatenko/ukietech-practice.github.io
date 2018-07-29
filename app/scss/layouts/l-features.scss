@@ -3,11 +3,70 @@
 .l-features {
   width: 100%;
   height: 745px;
+  margin-bottom: 100px;
   padding-top: 105px;
   background: $transparent-color-bg url("../img/features-bg.jpg");
   background-blend-mode: lighten;
   background-size: cover;
+  @media screen and(max-width: 768px) {
+    height: 546px;
+  }
   .m-text {
     margin-top: 0px;
+  }
+  .ipad {
+    margin: 0 auto;
+    position: relative;
+    top: 8px;
+    right: 29px;
+    width: 575px;
+    height: 579px;
+    background-image: url(../img/ipad.svg);
+    background-size: cover;
+    z-index: 1;
+    @media screen and(max-width: 768px) {
+      //For centered on 320-768 width screen
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      //
+      width: 378px;
+      height: 380px;
+    }
+    &__screen {
+      position: absolute;
+      top: 71px;
+      right: 73px;
+      @media screen and(max-width: 768px) {
+        top: 46px;
+        right: 48px;
+        //height: 546px;
+      }
+    }
+    .iphone {
+      bottom: 366px;
+      left: 335px;
+      position: relative;
+      width: 260px;
+      height: 418px;
+      background-image: url(../img/iphone.svg);
+      background-size: cover;
+      z-index: 10;
+      @media screen and(max-width: 768px) {
+        bottom: 220px;
+        left: 130px;
+        width: 160px;
+        height: 270px;
+      }
+      &__screen {
+        position: absolute;
+        top: 54px;
+        right: 38px;
+        @media screen and(max-width: 768px) {
+          top: 37px;
+          right: 19px;
+        }
+      }
+    }
   }
 }

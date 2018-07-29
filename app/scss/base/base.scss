@@ -84,7 +84,9 @@ h3 {
   font-weight: bold;
 }
 span {
+  text-transform: uppercase;
   font-family: $headers-font;
+  color: $color-span;
 }
 button {
   font-family: $headers-font;
@@ -97,4 +99,5 @@ button {
 p {
   margin: 0;
   font-family: $main-font;
+  color: $color-font-descriptiion;
 }

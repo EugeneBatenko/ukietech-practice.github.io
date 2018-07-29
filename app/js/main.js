@@ -1,5 +1,4 @@
 //STICKY FUNCTION FOR NAVIGATION
-// var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (currentScrollPos != 0) {
@@ -7,8 +6,8 @@ window.onscroll = function () {
     } else {
         document.getElementById("header").style.background = "rgba(0,0,0,.0)";
     }
-
 }
+
 //Animation of hamburger
 var mob_menu = document.getElementById("mobile-ul");
 
@@ -114,5 +113,15 @@ $(window).scroll(function () {
     }
 });
 
-
+//L-SERVICE-2 => DROPDOWN BUTTONS
+// function dropdown(event) {
+//     var dropdown_text = document.getElementById("dropdown-text");
+//     // var arrow = document.getElementById("arrow");
+//     var x = event.target;
+//     if (dropdown_text.style.height === "180px") {
+//         dropdown_text.style.height = "0";
+//     } else {
+//         dropdown_text.style.height = "180px";
+//     }
+// }
 
