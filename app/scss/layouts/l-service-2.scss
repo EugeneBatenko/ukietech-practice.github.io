@@ -1,4 +1,4 @@
-@import "../modules/m-dropdown-button.scss";
+@import "../modules/m-accordion";
 
 
 .l-service-2 {
@@ -6,6 +6,10 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    @media screen and(max-width: 1200px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
     .service-img-container {
       max-width: 570px;
     }

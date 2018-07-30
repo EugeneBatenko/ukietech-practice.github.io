@@ -114,10 +114,9 @@ $(window).scroll(function () {
 });
 
 //L-SERVICE-2 => DROPDOWN BUTTONS
-// function dropdown(event) {
-//     var dropdown_text = document.getElementById("dropdown-text");
-//     // var arrow = document.getElementById("arrow");
-//     var x = event.target;
+// function dropdown() {
+//     var dropdown_text = document.getElementById("accordion-text");
+//     var arrow = document.getElementById("arrow");
 //     if (dropdown_text.style.height === "180px") {
 //         dropdown_text.style.height = "0";
 //     } else {

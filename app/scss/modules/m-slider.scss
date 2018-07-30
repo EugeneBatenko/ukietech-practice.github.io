@@ -59,11 +59,13 @@
     p {
       margin-top: 17px;
       font-size: 18px;
+      color: $white-font-color;
       @media screen and(max-width: 1024px) {
         font-size: 5.5vw;
         margin-top: 10px;
       }
       span {
+        color: $white-font-color;
         font-weight: bold;
         font-size: 24px;
         height: 25px;
