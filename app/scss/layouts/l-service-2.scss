@@ -3,12 +3,14 @@
 
 .l-service-2 {
   flex-direction: column;
+  margin-bottom: 131px;
   &__content {
     display: flex;
     justify-content: space-between;
     @media screen and(max-width: 1200px) {
-      justify-content: center;
-      flex-wrap: wrap;
+      //justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
     .service-img-container {
       max-width: 570px;

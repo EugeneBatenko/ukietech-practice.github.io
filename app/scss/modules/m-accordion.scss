@@ -6,8 +6,13 @@
   justify-content: space-between;
   height: 380px;
   .m-accordion__container {
-    //flex-direction: column;
     max-width: 600px;
+    @media screen and (max-width: 1200px) {
+      max-width: 572px;
+    }
+    @media screen and (max-width: 580px) {
+      max-width: 320px;
+    }
     input {
       display: none;
     }

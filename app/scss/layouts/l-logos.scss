@@ -1,0 +1,23 @@
+@import "../utilities/variables.scss";
+
+.l-logos {
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  background-color: $grey-bg-color;
+  margin-bottom: 110px;
+  .logos-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and(max-width: 1024px) {
+      justify-content: space-around;
+    }
+    img {
+      //flex: 0 0 160px;
+      //margin: 10px;
+      object-fit: cover;
+    }
+  }
+}

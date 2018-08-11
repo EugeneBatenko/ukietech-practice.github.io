@@ -1,0 +1,27 @@
+@import "../utilities/variables.scss";
+@import "../modules/m-our-team-picture.scss";
+@import "../modules/m-share.scss";
+
+.l-our-team {
+  position: relative;
+  margin-bottom: 200px;
+  .names {
+    width: 100%;
+    margin: 0 auto;
+    top: 505px;
+    text-align: center;
+    position: absolute;
+    @media screen and(max-width: 1200px) {
+      top: 400px;
+    }
+    span {
+      font-weight: bold;
+      font-size: 14px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
+}

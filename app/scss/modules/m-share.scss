@@ -1,0 +1,30 @@
+@import "../utilities/variables.scss";
+
+.m-share {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  right: 78px;
+  width: 224px;
+  height: 56px;
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: 10;
+  @media screen and(max-width: 768px) {
+    right: 88px * 0.5;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    font-size: 26px;
+    color: $pink-color;
+    background-color: $yellow-hover-link-color;
+    &:hover {
+      color: $white-font-color;
+      background-color: $pink-color;
+    }
+  }
+}

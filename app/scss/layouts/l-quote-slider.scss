@@ -1,0 +1,101 @@
+@import "../utilities/variables.scss";
+
+.l-quote-slider {
+  width: 100%;
+  height: 290px;
+  display: flex !important;
+  align-items: center;
+  background-color: $grey-bg-color;
+  margin-bottom: 100px;
+  .next {
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 20vw;
+    @media screen and (max-width: 1900px) {
+      right: 5vw;
+    }
+  }
+  .prev {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 20vw;
+    @media screen and (max-width: 1900px) {
+      left: 5vw;
+    }
+  }
+  &__content {
+    //important for fix a slick default styles
+    display: flex !important;
+    justify-content: space-between;
+    margin: 0 auto;
+    @media screen and (max-width: 1200px) {
+      justify-content: center;
+    }
+    .quote-icon {
+      width: 144px;
+      height: 144px;
+      border: 3px solid $green-main-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 110px;
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+      i {
+        color: $green-main-color;
+        font-size: 60px;
+      }
+    }
+    .quote-text {
+      width: 100%;
+      max-width: 760px;
+      height: 150px;
+      margin: 2px 120px 0 0;
+      letter-spacing: 0.8px;
+      @media screen and (max-width: 1200px) {
+        max-width: 75%;
+        margin: 2px 0 0 15px;
+      }
+      @media screen and (max-width: 768px) {
+        height: 190px;
+      }
+      &::before {
+        display: block;
+        position: absolute;
+        top: 140px;
+        content: "";
+        width: 60px;
+        height: 3px;
+        background-color: $pink-color;
+        @media screen and (max-width: 768px) {
+          top: 180px;
+        }
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        top: 120px;
+        margin-left: 70px;
+        content: "Jon Doe";
+        font-size: 24px;
+        font-family: $header-font-cursive;
+        @media screen and (max-width: 768px) {
+          top: 160px;
+        }
+      }
+      blockquote {
+        font-size: 24px;
+        line-height: 36px;
+        font-style: italic;
+        @media screen and (max-width: 1200px) {
+          font-size: 18px;
+        }
+        @media screen and (max-width: 768px) {
+          line-height: 27px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

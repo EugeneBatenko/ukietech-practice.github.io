@@ -112,15 +112,17 @@ $(window).scroll(function () {
         a = 1;
     }
 });
+//QUOTE SLICK SLIDER
+$(document).ready(function () {
+    $('.l-quote-slider').slick({
+        dots: false,
+        infinite: true,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 800,
 
-//L-SERVICE-2 => DROPDOWN BUTTONS
-// function dropdown() {
-//     var dropdown_text = document.getElementById("accordion-text");
-//     var arrow = document.getElementById("arrow");
-//     if (dropdown_text.style.height === "180px") {
-//         dropdown_text.style.height = "0";
-//     } else {
-//         dropdown_text.style.height = "180px";
-//     }
-// }
-
+        nextArrow: '<svg class="next" xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22" xml:space="preserve"><path id="next" transform="translate(-1523 -4554)" fill="#ccc" d="M1523.52 4572.86l7.86-7.86-7.96-7.96a1.5 1.5 0 0 1 2.12-2.12l9 9a1.5 1.5 0 0 1 0 2.16l-9 9a1.5 1.5 0 0 1-2.54-1.08c0-.46.2-.86.52-1.14z"/></svg>',
+        prevArrow: '<svg class="prev" xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22" xml:space="preserve"><path id="prev" transform="translate(-383 -4554)" fill="#ccc" d="M394.48 4572.86l-7.86-7.86 7.96-7.96a1.5 1.5 0 0 0-2.12-2.12l-9 9a1.5 1.5 0 0 0 0 2.16l9 9a1.5 1.5 0 1 0 2.02-2.22z"/></svg>',
+    });
+});

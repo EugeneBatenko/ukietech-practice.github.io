@@ -1,0 +1,73 @@
+@import "../utilities/variables.scss";
+
+.m-pics-our-team {
+  margin-bottom: 30px;
+  @media screen and(max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .picture {
+    width: 380px;
+    height: 468px;
+    position: relative;
+    background-color: $green-main-color;
+    @media screen and(max-width: 1200px) {
+      width: 320px;
+      height: 394px;
+      margin: 0 auto 50px auto;
+    }
+    .image-container {
+      width: 380px;
+      height: 470px;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      transition: all 0.4s;
+      @media screen and(max-width: 1200px) {
+        width: 320px;
+        height: 396px;
+      }
+      &::after {
+        content: '';
+        width: 380px;
+        height: 470px;
+        //Fix positioning
+        top: -2px;
+        //
+        position: absolute;
+        background-image: linear-gradient(to top,
+                rgba(252, 227, 138, 0.9) 0%,
+                rgba(243, 129, 129, 0.9) 100%);
+        z-index: 1;
+        opacity: 0;
+        transition: all 1s;
+        @media screen and(max-width: 1200px) {
+          width: 320px;
+          height: 396px;
+          top: -2px;
+        }
+      }
+      &:hover {
+        top: -10px;
+        left: -10px;
+        transition: all 0.4s;
+        &::before {
+          top: calc(50% - 20px);
+          opacity: 1;
+          transition: all 1s;
+        }
+        &::after {
+          opacity: 1;
+          transition: all 1s;
+        }
+        .m-share {
+          opacity: 1;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}
