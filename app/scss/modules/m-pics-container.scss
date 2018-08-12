@@ -1,23 +1,12 @@
 @import "../utilities/variables.scss";
+
 .middle-container {
   picture {
     position: relative;
-    //&::before {
-    //  content: "\f03e\A CREATIVELY DESIGNED\A Lorem ipsum dolor sit";
-    //  position: absolute;
-    //  top: 50%;
-    //  left: 25%;
-    //  text-align: center;
-    //  vertical-align: text-bottom;
-    //  white-space: pre-wrap;
-    //  color: $white-font-color;
-    //  font-family: FontAwesome, $headers-font, $main-font;
-    //  font-weight: 700;
-    //  font-size: 18px;
-    //  opacity: 0;
-    //  z-index: 10;
-    //  transition: all 1s;
-    //}
+    @media screen and(max-width: 768px) {
+      width: 320px;
+      height: 260px;
+    }
     &::after {
       content: '';
       text-align: center;
@@ -38,8 +27,8 @@
       opacity: 0;
       transition: all 1s;
       @media screen and(max-width: 768px) {
-        @include small-sizes-img;
-        top: -2px;
+        width: 320px;
+        height: 260px;
       }
     }
     &:hover {
@@ -83,11 +72,23 @@
       font-style: italic;
       color: $white-font-color;
     }
+    @media screen and(max-width: 768px) {
+      top: 40%;
+      right: 24%;
+    }
   }
   .jellyfish {
+    @media screen and(max-width: 768px) {
+      width: 320px;
+      height: 520px;
+    }
     &::after {
       width: 480px;
       height: 780px;
+      @media screen and(max-width: 768px) {
+        width: 320px;
+        height: 520px;
+      }
     }
   }
 }

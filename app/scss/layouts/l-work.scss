@@ -1,28 +1,32 @@
 @import "../utilities/variables.scss";
 @import "../modules/m-pics-container.scss";
 
-.m-pics-container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  .middle-container {
+.l-work {
+  margin-bottom: 104px;
+  .m-pics-container {
     width: 100%;
-    max-width: 960px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin: 0 auto;
-    picture {
-      max-height: 390px;
-    }
-    .small-container {
+    .middle-container {
+      width: 100%;
+      max-width: 960px;
       display: flex;
-      flex-direction: column;
-      picture:not(.jellyfish) {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0 auto;
+      picture {
         max-height: 390px;
       }
-      .jellyfish {
-        max-height: 780px;
+      .small-container {
+        display: flex;
+        flex-direction: column;
+        picture:not(.jellyfish) {
+          max-height: 390px;
+        }
+        .jellyfish {
+          max-height: 780px;
+        }
       }
     }
   }

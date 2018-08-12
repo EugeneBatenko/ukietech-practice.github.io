@@ -114,7 +114,7 @@ $(window).scroll(function () {
 });
 //QUOTE SLICK SLIDER
 $(document).ready(function () {
-    $('.l-quote-slider').slick({
+    $('.l-quote-slider, .l-testimonial-slider').slick({
         dots: false,
         infinite: true,
         arrows: true,
