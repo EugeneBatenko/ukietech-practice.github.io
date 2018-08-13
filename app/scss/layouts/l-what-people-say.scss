@@ -1,0 +1,17 @@
+@import "../utilities/variables.scss";
+@import "../modules/m-quotes.scss";
+
+.l-what-people-say {
+  width: 100%;
+  min-height: 830px;
+  background: $transparent-color-bg url("../img/mountain.jpg");
+  background-blend-mode: lighten;
+  background-size: cover;
+  margin-bottom: 112px;
+  .m-text {
+    padding-top: 112px;
+    &::after {
+      margin-bottom: 86px;
+    }
+  }
+}
