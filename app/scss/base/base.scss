@@ -95,12 +95,14 @@ button {
   font-size: 14px;
   color: $white-font-color;
   outline: none;
+  cursor: pointer;
   border: 3px solid $white-font-color;
   background-color: $full-transparent-color;
 }
 p {
   margin: 0;
   font-size: 15px;
+  line-height: 24px;
   font-family: $main-font;
   color: $color-font-descriptiion;
 }

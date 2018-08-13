@@ -13,6 +13,7 @@
     z-index: 10;
     h2 {
       color: $pink-color;
+      font-size: 24px;
       text-align: center;
       //margin:  10px 0 21px 0;
       &::before {
@@ -35,13 +36,12 @@
     position: absolute;
     top: 50%;
     left: 0;
-    width: 120px;
-    height: 50px;
-    font-size: 24px;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
     text-transform: uppercase;
     background-color: $pink-color;
     border: none;
-    cursor: pointer;
     z-index: 10;
     transition: all 0.5s;
     opacity: 0;
@@ -51,7 +51,7 @@
   }
   .map {
     width: 100%;
-    min-height: 290px;
+    min-height: 200px;
     opacity: 0.3;
   }
 }
