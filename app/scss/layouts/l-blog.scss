@@ -1,0 +1,16 @@
+@import "../modules/m-blog.scss";
+
+.l-blog {
+  margin-bottom: 120px;
+  .blog-container {
+    padding: 0 5px;
+    @media screen and(max-width: 996px) {
+      flex-direction: column;
+    }
+  }
+  .m-text {
+    &::after {
+      margin-bottom: 47px;
+    }
+  }
+}

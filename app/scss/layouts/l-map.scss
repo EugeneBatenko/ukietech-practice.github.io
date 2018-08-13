@@ -1,0 +1,57 @@
+
+.l-map {
+  width: 100%;
+  position: relative;
+  &__header {
+    position: absolute;
+    width: 200px;
+    margin: 0 auto;
+    top: calc(50% - 50px);
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 10;
+    h2 {
+      color: $pink-color;
+      text-align: center;
+      //margin:  10px 0 21px 0;
+      &::before {
+        display: block;
+        content: "\f041";
+        font-family: FontAwesome;
+        margin-bottom: 18px;
+      }
+      &::after {
+        display: block;
+        content: "";
+        width: 60px;
+        height: 3px;
+        background-color: $pink-color;
+        margin: 21px auto 0 auto;
+      }
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 120px;
+    height: 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: $pink-color;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.5s;
+    opacity: 0;
+    &:hover {
+      background-color: $yellow-hover-link-color;
+    }
+  }
+  .map {
+    width: 100%;
+    min-height: 290px;
+    opacity: 0.3;
+  }
+}

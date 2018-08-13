@@ -9,13 +9,26 @@
       display: flex;
       flex-wrap: wrap;
       margin:0 auto 60px auto;
+      @media screen and(max-width: 560px) {
+        flex-direction: column;
+      }
       img {
+        width: 110px;
+        height: 110px;
         object-fit: cover;
         border-radius: 50%;
         margin: 0 30px 60px 0;
+        @media screen and(max-width: 560px) {
+          margin: 0 auto;
+        }
+
       }
       &__names {
         padding-top: 5px;
+        @media screen and(max-width: 560px) {
+          margin: 0 auto;
+          text-align: center;
+        }
         span {
           //font-size: 14px;
           font-weight: bold;
@@ -26,7 +39,7 @@
           }
         }
         .quotes-description {
-          width: 370px;
+          max-width: 370px;
           font-style: normal;
           &::before {
             display: block;
@@ -35,6 +48,9 @@
             height: 3px;
             background-color: $pink-color;
             margin: 24px 0 20px 0;
+            @media screen and(max-width: 560px) {
+              margin: 24px auto 20px auto;
+            }
         }
       }
     }
